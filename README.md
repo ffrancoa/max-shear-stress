@@ -1,5 +1,3 @@
-# Soil Triaxial Tests
-
-Streamlit app for triaxial test on soils processing.
+# ⛰️ Maximum Shearing Stress
 
 
