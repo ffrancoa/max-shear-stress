@@ -139,9 +139,10 @@ if all(st.session_state.params[1:]):
     col31, col32 = st.columns([1.8, 1.0])
 
     with col32:
-        show_max_circle = st.select_slider(
+        show_max_circle = st.radio(
             "Show failure state?",
-            ["No", "Yes"],
+            ["Yes", "No"],
+            index=1,
             disabled=True if not v_stress else False,
         )
 
@@ -183,7 +184,7 @@ if all(st.session_state.params[1:]):
         )
     )
 
-    # Mohr Coulomb Envelope Positive
+    # Mohr Coulomb Envelope Negative
     fig.add_trace(
         go.Scatter(
             x=rango_p1,
